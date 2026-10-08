@@ -1,0 +1,8 @@
+{
+  "schema": "meilleur-client-public-release-index/v1",
+  "platform": "windows",
+  "channel": "stable",
+  "status": "unpublished",
+  "release": null,
+  "note": "Untrusted discovery only. No Windows organization release has been signed/accepted. Gateway must independently verify RSA, immutable ZIP SHA256, platform and explicit activation; never infer from GitHub Latest."
+}
