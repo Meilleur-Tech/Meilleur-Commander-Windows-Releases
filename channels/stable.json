@@ -1,8 +1,65 @@
 {
-  "schema": "meilleur-client-public-release-index/v1",
-  "platform": "windows",
   "channel": "stable",
-  "status": "unpublished",
-  "release": null,
-  "note": "Untrusted discovery only. No Windows organization release has been signed/accepted. Gateway must independently verify RSA, immutable ZIP SHA256, platform and explicit activation; never infer from GitHub Latest."
+  "note": "Untrusted discovery only; Gateway must independently verify RSA, immutable SHA256, compatibility and explicit activation",
+  "platform": "windows",
+  "release": {
+    "arch": "x86_64",
+    "artifact_source": {
+      "client_build": "sha256:c94e26a16bb33a0942b0307fabc1f9c139aa26043e15e4df4a4f4796dd7857c0",
+      "client_version": "2.1.4",
+      "schema": "meilleur-client-release-artifact-source/v1",
+      "sha256": "838466f8887beeb4b4700aaa72db1c2342da54d6bf5fd876d220fff0421f614e",
+      "source_commit": "a44cc1f01655a64a04556d26ccc8f90b2fd79597",
+      "url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-v2.1.4/Meilleur-Commander-Client-Windows-x86_64-2.1.4.zip",
+      "version": 1
+    },
+    "asset_size_bytes": 8491403,
+    "asset_url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-v2.1.4/Meilleur-Commander-Client-Windows-x86_64-2.1.4.zip",
+    "client_build": "sha256:c94e26a16bb33a0942b0307fabc1f9c139aa26043e15e4df4a4f4796dd7857c0",
+    "compatibility": {
+      "bridge_protocol": {
+        "maximum": 1,
+        "minimum": 1
+      },
+      "gateway_version": {
+        "maximum": "2.9.9",
+        "minimum": "2.0.5"
+      }
+    },
+    "manifest": {
+      "arch": "x86_64",
+      "artifact": "package.zip",
+      "client_build": "sha256:c94e26a16bb33a0942b0307fabc1f9c139aa26043e15e4df4a4f4796dd7857c0",
+      "client_version": "2.1.4",
+      "compatibility": {
+        "bridge_protocol": {
+          "maximum": 1,
+          "minimum": 1
+        },
+        "gateway_version": {
+          "maximum": "2.9.9",
+          "minimum": "2.0.5"
+        }
+      },
+      "os": "windows",
+      "schema": "meilleur-client-release/v2",
+      "sha256": "838466f8887beeb4b4700aaa72db1c2342da54d6bf5fd876d220fff0421f614e",
+      "signature": {
+        "algorithm": "rsa-sha256",
+        "key_id": "mc-client-caf94007b07dc90b",
+        "value": "a9kWOYoFJDzzbXzQ0a1t8sbbTp/OtqYf+bGWX6n92qQRDdjonJjWOSANdhuvc1FhfcOOW00Pld8Uh2XNV6fdeUAEK6aIrJOQ2IaMf+CCdZ/2vc8hUD/J03m/wcaisiDZp+E2meOWQcARqf6AebNMrYB85mtjiWLvHdPX7jv/T/K0J1qKN7iJec1e+8OwptxHPfAFMkPRCs7bzj9gpIf2+h//XjI0ReD58hgiDcOu6qQSiEF2ZIy/P82eHkEXijy/K9a84AwhtcNXFf3JhIHJ1poDsmgyjuSObyioMdB6ktpN6k+LhSMvBE2ySyDpkbaWku+klTg34/Qm5yjyOFp6H+MFim4XEXkAKokX9kQhcjhICMCZ2SysXZxnbXI3zqDfgL5e1jbALIhV0kil6KhezqU7Sld5YCzYTjfN62lfZjPNNOGHl0OQxWDcUVN1ONj1qOomR99065+K1njtyi13FSWbweAhlpYh2gdlOrmRqfymzlncV6WIRYYacwp8MKRy"
+      },
+      "source_commit": "a44cc1f01655a64a04556d26ccc8f90b2fd79597",
+      "version": 2
+    },
+    "manifest_key_id": "mc-client-caf94007b07dc90b",
+    "manifest_sha256": "88ab34bdbc630c96e9ed65c57c9cf3b501acd3904e4eb63c00fa4e124bab883c",
+    "sha256": "838466f8887beeb4b4700aaa72db1c2342da54d6bf5fd876d220fff0421f614e",
+    "source_commit": "a44cc1f01655a64a04556d26ccc8f90b2fd79597",
+    "supersedes": "2.1.2",
+    "tag": "windows-client-v2.1.4",
+    "version": "2.1.4"
+  },
+  "schema": "meilleur-client-public-release-index/v1",
+  "status": "published"
 }
