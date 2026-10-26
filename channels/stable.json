@@ -5,17 +5,17 @@
   "release": {
     "arch": "x86_64",
     "artifact_source": {
-      "client_build": "sha256:086955caaafe7d1583769104a9ba1e44c2699a1cbc1694386f7bb240fc6e51d1",
-      "client_version": "2.2.0",
+      "client_build": "sha256:99522b1d86f46a2da4b371b175c71122b54e883dcbdcd19a5eadc2378145588b",
+      "client_version": "2.2.1",
       "schema": "meilleur-client-release-artifact-source/v1",
-      "sha256": "ef9e11cd15b742b166d0724d1160edce8d535c6402c26c575e18554b5b3ffa34",
-      "source_commit": "1de8c5b244531ea836fba0d2e088187468f275ea",
-      "url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-v2.2.0/Meilleur-Commander-Client-Windows-x86_64-2.2.0.zip",
+      "sha256": "e088a72bc362a8afb85167de423478fe3494c7a8196061debc823e66f577bd79",
+      "source_commit": "b08482a5b476803c9973e788597a01a7e7ffbc1e",
+      "url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-v2.2.1/Meilleur-Commander-Client-Windows-x86_64-2.2.1.zip",
       "version": 1
     },
-    "asset_size_bytes": 8637549,
-    "asset_url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-v2.2.0/Meilleur-Commander-Client-Windows-x86_64-2.2.0.zip",
-    "client_build": "sha256:086955caaafe7d1583769104a9ba1e44c2699a1cbc1694386f7bb240fc6e51d1",
+    "asset_size_bytes": 8686434,
+    "asset_url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-v2.2.1/Meilleur-Commander-Client-Windows-x86_64-2.2.1.zip",
+    "client_build": "sha256:99522b1d86f46a2da4b371b175c71122b54e883dcbdcd19a5eadc2378145588b",
     "compatibility": {
       "bridge_protocol": {
         "maximum": 1,
@@ -29,8 +29,8 @@
     "manifest": {
       "arch": "x86_64",
       "artifact": "package.zip",
-      "client_build": "sha256:086955caaafe7d1583769104a9ba1e44c2699a1cbc1694386f7bb240fc6e51d1",
-      "client_version": "2.2.0",
+      "client_build": "sha256:99522b1d86f46a2da4b371b175c71122b54e883dcbdcd19a5eadc2378145588b",
+      "client_version": "2.2.1",
       "compatibility": {
         "bridge_protocol": {
           "maximum": 1,
@@ -43,22 +43,22 @@
       },
       "os": "windows",
       "schema": "meilleur-client-release/v2",
-      "sha256": "ef9e11cd15b742b166d0724d1160edce8d535c6402c26c575e18554b5b3ffa34",
+      "sha256": "e088a72bc362a8afb85167de423478fe3494c7a8196061debc823e66f577bd79",
       "signature": {
         "algorithm": "rsa-sha256",
         "key_id": "mc-client-caf94007b07dc90b",
-        "value": "hPSivb0u0QrTYTYt9AaQrqzveF7nu34++vNrA9X1HQ3Z/uZAZi6J8VPl3azYVZK0onRTA5lAamBiXX4QCnnjjsvcUuRHbABPOWvMkj5DbMFGQFNtJNyTVJLB7LzgPohGk3xwaYOpO7sF0jzK+GGSWnDiZz/dn+OYTTVrCXRPXFcbKhE1JqykErSKP8EzimFRBrevIGQolyS4f7AsY+7wigoucq1w9qml4k4JA0HhpI+V7+RsiFqAf6RmdG1q1J7FSgnvVH0bVSTjVS6+ExbPHBAwGauC/NyCN6Hu01fezOmg9Zdkl9DhsTsaP/jDMazWoidTjJYSDC+NEY2i1xApLx8REoh6m39gIW90qKLIvoQGfLeVsQ74Qo2w9aQgcFnF6EM425kPvut+BPB0S+oL8Nfb3zBC0d4IPPBu8roQUw/ozpeELIxT399klIYRrqZLaQVVx2Pl0OVJUUJo0QLj6lm2+Lc8RLA1TU8uyaV1bIbNrbGNHqcZa0+3m0pjpQ6E"
+        "value": "rgHYrPiYgyDjGu3Hf8VT3Z5/KbOThIv6+lMkbo6TqimU6vLqRJG22yU8Ff2kK5NWMh+2JT7sQo0pPG/Nikph6I07dRCiwPtgQle3kGKWKe11DP0VdEloJkDAmGYXVGu40IeK8Kse1+b7byqgtAjdlguA9VgGzulNgGgJOD1HqPrDK3KoNRiu84oyJNnIgvqktSg6tlsaqxNw1r/TfzwXbqdvww8iw1nBNo5JK46aId1rsyZJZOAmiZWUm4AUDldm24vuWrC0mTt88GCjB9TJzAjMjuk/ld2OgPQTdsw3q6z6MCNiOiyjqYqtPsL0tZubEAKhRCY0qtdoMfulCHzUl1+HWFiWGaEW/L5A2gbTAb/aAH6GItS12tJRHOkTKCrsuyBtrdg4UZNootClrL1Var9trQIJ3aEJmFlBqY3W8r9hHYq4YapJlIKEPJvom2R1qc/iBROzFAdl7oRDLCkGfDM/IzTKOKCbbl+RB5514C4Vyk4PRcFOmzlPIpN+BpHj"
       },
-      "source_commit": "1de8c5b244531ea836fba0d2e088187468f275ea",
+      "source_commit": "b08482a5b476803c9973e788597a01a7e7ffbc1e",
       "version": 2
     },
     "manifest_key_id": "mc-client-caf94007b07dc90b",
-    "manifest_sha256": "b0a9efe608000779a6eb417ca4c48ca6f971362fa4c177183c02d3e073c4b74a",
-    "sha256": "ef9e11cd15b742b166d0724d1160edce8d535c6402c26c575e18554b5b3ffa34",
-    "source_commit": "1de8c5b244531ea836fba0d2e088187468f275ea",
-    "supersedes": "2.1.4",
-    "tag": "windows-client-v2.2.0",
-    "version": "2.2.0"
+    "manifest_sha256": "0bf60036a751c5a39158372e6b022129cbaa940de3e00d3586c29cfc0027e008",
+    "sha256": "e088a72bc362a8afb85167de423478fe3494c7a8196061debc823e66f577bd79",
+    "source_commit": "b08482a5b476803c9973e788597a01a7e7ffbc1e",
+    "supersedes": "2.2.0",
+    "tag": "windows-client-v2.2.1",
+    "version": "2.2.1"
   },
   "schema": "meilleur-client-public-release-index/v1",
   "status": "published"
