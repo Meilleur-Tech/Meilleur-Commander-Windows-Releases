@@ -1,12 +1,24 @@
-# Changelog der öffentlichen Windows-Release-Dokumentation
+# Neuerungen bei Meilleur Commander für Windows
 
-## Unreleased | 2.2.8 QA-Kandidaten
+## 2.2.8 (x64 und ARM64, Testversion)
 
-- Dokumentation der getrennten signierten Windows x64- und ARM64-2.2.8-Handoffs und ihrer unterschiedlichen SHA256-Listen.
-- Sicherer Windows-only Update-Bootstrap aus dem bereits konfigurierten HTTPS-Gateway für noch ungepaarte Geräte, ohne Enrollment-/RSA-Umgehung (Source PR #1735).
-- Offene Native-OTA-, GUI-, Rollback- und Production-Feldtests als Release-Blocker sichtbar gemacht.
-- Vorhandenen stabilen x64-2.2.3-Kanal ausdrücklich nicht umgestellt.
+- Verbesserte Updateprüfung auch während der Ersteinrichtung, sofern bereits ein Gateway eingestellt wurde
+- Bereits verbundene Geräte verwenden weiterhin ihr konfiguriertes Gateway für Updates
 
-## Historisch
+## 2.2.7 (x64 und ARM64, Testversion)
 
-Die unveränderlichen älteren GitHub-Releases und der maschinenlesbare stabile Kanal bleiben als Nachweis verfügbar.
+- Vorabversion zur Erprobung von Installation, Updatefunktion und Benutzeroberfläche
+
+## 2.2.3 (x64, stabile Version)
+
+- Fortschrittsanzeige bei der Aktualisierung
+- Deutsche Schaltfläche „Nach Updates suchen“
+- Verbesserte Aktivitätsanzeige
+- Verbesserte Scrollleisten in den Einstellungen
+
+## 2.2.2 (x64, Testversion)
+
+- Verständlichere Fehlermeldungen bei Zertifikatsproblemen
+- Lokale Versionsanzeige auch bei vorübergehend fehlender Gateway-Verbindung
+
+Ältere Versionen findest du im Bereich [Releases](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases).

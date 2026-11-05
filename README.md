@@ -1,24 +1,36 @@
-# Meilleur Commander Windows Client | Downloads und Versionsnachweise
+# Meilleur Commander für Windows
 
-Meilleur Commander Windows hat getrennte native Pakete für **x86_64 (x64)** und **ARM64**. Beide besitzen eine native Windows-Oberfläche, den installierten Core und den lokalen Supervisor; es handelt sich um Binärpakete, nicht um Quellcode-Archive. Ausgegebene Update-Kanäle und eine neue GitHub-Version ersetzen niemals eine explizite Gateway-Freigabe.
+Hier findest du die Windows-Downloads und Anleitungen für Meilleur Commander.
 
-## Aktueller Freigabestatus
+## Downloads
 
-- **Stabile Kundenfassung x64: 2.2.3**, siehe [stabiler Release](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/tag/windows-client-v2.2.3) und [channels/stable.json](channels/stable.json). Der stabile Kanal bleibt während der QA von 2.2.8 unverändert.
-- **Testkandidaten 2.2.8 x64 und ARM64:** signierte native Binaries aus Source `39549d4a188eafd8748dc0f167affc0495c20131`, jedoch **nicht Stable/Latest/Produktivfreigabe**. Zurzeit sind die Versionen im QA-Abnahmeprozess; ein bloßer Release-Tag oder Draft ist keine zugesagte Verfügbarkeit.
-- **Vorherige QA: 2.2.7** jeweils als getrennte signierte Prereleases. Ihre signierten Artefakte dürfen nicht umgepackt oder ersetzt werden.
+| Windows-Version | Veröffentlichung | Download |
+|---|---|---|
+| **Windows x64, Version 2.2.3** | Aktuelle stabile Version | [Stable herunterladen](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/tag/windows-client-v2.2.3) |
+| Windows x64, Version 2.2.8 | Testversion | [x64-Testversion](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/tag/windows-client-v2.2.8) |
+| Windows ARM64, Version 2.2.8 | Testversion | [ARM64-Testversion](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/tag/windows-client-arm64-v2.2.8) |
 
-| CPU | Version | Dateiname Setup | Dokumentation |
-|---|---|---|---|
-| Windows x64 | 2.2.8 | `Meilleur-Commander-Client-Windows-x86_64-2.2.8-Setup.exe` | [Release Notes x64](docs/RELEASE-NOTES-2.2.8.md) |
-| Windows ARM64 | 2.2.8 | `Meilleur-Commander-Client-Windows-arm64-2.2.8-Setup.exe` | [Release Notes ARM64](docs/RELEASE-NOTES-2.2.8-arm64.md) |
+**Wichtig:** Testversionen werden nicht automatisch zum stabilen Update. Für normale Installationen die stabile Version verwenden. Die Installation muss zur CPU-Architektur deines Windows-Geräts passen.
 
-## Anleitungen und Prüfsummen
+## Funktionen
 
-[Installation 2.2.8](docs/INSTALLATION.md) | [Fehlerbehebung 2.2.8](docs/FEHLERBEHEBUNG.md) | [Sicherheit und Kompatibilität 2.2.8](docs/SICHERHEIT-UND-KOMPATIBILITAET.md)
+- Native Windows-Anwendung mit grafischer Oberfläche
+- Verbindung mit dem eingerichteten Meilleur-Commander-Gateway
+- Geräteverbindung über einen Kopplungscode
+- Updateprüfung aus der Anwendung heraus
+- Wiederherstellung der vorherigen Programmversion, sofern verfügbar
 
-Die x64-Dateiliste [docs/SHA256SUMS-2.2.8.txt](docs/SHA256SUMS-2.2.8.txt) und die eigenständige ARM64-Dateiliste [docs/SHA256SUMS-2.2.8-arm64.txt](docs/SHA256SUMS-2.2.8-arm64.txt) dürfen nicht verwechselt werden. Die Dateien `manifest.json`, `installer.json` und `artifact-source.json` in jedem Release beziehen sich nur auf dessen CPU-Architektur.
+## Installation
 
-**Sicherheit:** Das Gateway verifiziert die RSA-SHA256-Release-Signatur mit dem Key `mc-client-caf94007b07dc90b`, exakte SHA-256-Digests, Architektur, Source und Bridge-/Gateway-Kompatibilität. Weder GitHub »Latest« noch die Sichtbarkeit eines Prerelease installiert automatisch Updates. Der private Signierschlüssel liegt nicht in diesem Repository oder bei GitHub Actions. Die veröffentlichten ZIP-Dateien sind binary-only; die Windows Setup-EXE ist nicht Authenticode-codesigniert (Owner-Freigabevertrag), sondern wird durch den getrennten RSA-Release- und Hash-Vertrauenspfad abgesichert.
+1. Den passenden Download für **x64** oder **ARM64** öffnen.
+2. Die Datei mit der Endung **Setup.exe** herunterladen und starten.
+3. Das Gateway konfigurieren und den angezeigten Kopplungscode zur Verbindung verwenden.
+4. Updates später in der Anwendung unter **Einstellungen → Update & Wartung → Nach Updates suchen** prüfen.
 
-Source, CLI und Tests: [Meilleur-Tech/Meilleur-Commander](https://github.com/Meilleur-Tech/Meilleur-Commander), [Issue #1704](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/1704). Keine privaten Keys, Enrollment-Tokens, Kundendaten oder ungeschützten CI-Artefakte im Release-Repository.
+ZIP-Dateien sind Updatepakete für die Anwendung und normalerweise nicht für eine manuelle Installation gedacht.
+
+## Hinweise
+
+[Installation](docs/INSTALLATION.md) · [Neuerungen](CHANGELOG.md) · [Fehlerbehebung](docs/FEHLERBEHEBUNG.md) · [Sicherheit und Kompatibilität](docs/SICHERHEIT-UND-KOMPATIBILITAET.md)
+
+Die Downloads enthalten die für sichere Updates benötigten Signatur- und Prüfinformationen. Das Installationsprogramm besitzt derzeit keine Windows-Authenticode-Signatur. Lade es ausschließlich von dieser offiziellen Veröffentlichungsseite herunter.
