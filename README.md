@@ -1,21 +1,24 @@
-# Meilleur Commander Windows Releases
+# Meilleur Commander Windows Client | Downloads und Versionsnachweise
 
-Public, **binary-only** immutable release distribution for the Meilleur Commander Windows x86_64 client.
+Meilleur Commander Windows hat getrennte native Pakete für **x86_64 (x64)** und **ARM64**. Beide besitzen eine native Windows-Oberfläche, den installierten Core und den lokalen Supervisor; es handelt sich um Binärpakete, nicht um Quellcode-Archive. Ausgegebene Update-Kanäle und eine neue GitHub-Version ersetzen niemals eine explizite Gateway-Freigabe.
 
-**Source and build:** [Meilleur-Tech/Meilleur-Commander](https://github.com/Meilleur-Tech/Meilleur-Commander). This repository is distribution storage, **not** a source checkout or a signing authority. Never publish application source, private signing keys, credentials, tokens, enrollment state, Gateway configuration, or unsigned customer manifests.
+## Aktueller Freigabestatus
 
-## Release and trust contract
+- **Stabile Kundenfassung x64: 2.2.3**, siehe [stabiler Release](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/tag/windows-client-v2.2.3) und [channels/stable.json](channels/stable.json). Der stabile Kanal bleibt während der QA von 2.2.8 unverändert.
+- **Testkandidaten 2.2.8 x64 und ARM64:** signierte native Binaries aus Source `39549d4a188eafd8748dc0f167affc0495c20131`, jedoch **nicht Stable/Latest/Produktivfreigabe**. Zurzeit sind die Versionen im QA-Abnahmeprozess; ein bloßer Release-Tag oder Draft ist keine zugesagte Verfügbarkeit.
+- **Vorherige QA: 2.2.7** jeweils als getrennte signierte Prereleases. Ihre signierten Artefakte dürfen nicht umgepackt oder ersetzt werden.
 
-- Each accepted Windows release is published under an immutable `windows-client-v<version>` tag with audited native binaries, exact SHA256 checksums, provenance and an RSA-signed release manifest.
-- `channels/stable.json` is a **machine-readable discovery catalog**. It may identify a published release, but GitHub Releases “Latest” and this catalog **never authorize client installation**.
-- Authorized Gateway independently verifies signature, exact immutable asset SHA256/URL, platform **windows**, architecture **x86_64**, Bridge protocol and Gateway compatibility, and performs **explicit per-Gateway activation**.
-- Canonical RSA release key identity: `mc-client-caf94007b07dc90b`. The **private key remains exclusively with the authorized Owner release signer**, never in this repository or GitHub Actions.
-- Windows client and Gateway versions are independent. A compatible client release does **not** require a Gateway container build, version bump or restart.
-- Preserve immutable historic assets and URLs. Existing Windows clients may require a signed upgrade via their existing trusted legacy `pmeger/Meilleur-Commander-Releases` URL before accepting this repository; do not redirect an unupgraded installed client to an untrusted URL.
-- The `stable` channel begins with `release: null`. This explicitly means **no organizational Windows public release has been signed and accepted yet**. Do not turn “Latest” into a release by merely copying files.
+| CPU | Version | Dateiname Setup | Dokumentation |
+|---|---|---|---|
+| Windows x64 | 2.2.8 | `Meilleur-Commander-Client-Windows-x86_64-2.2.8-Setup.exe` | [Release Notes x64](docs/RELEASE-NOTES-2.2.8.md) |
+| Windows ARM64 | 2.2.8 | `Meilleur-Commander-Client-Windows-arm64-2.2.8-Setup.exe` | [Release Notes ARM64](docs/RELEASE-NOTES-2.2.8-arm64.md) |
 
-### Independent verification
+## Anleitungen und Prüfsummen
 
-Check the exact `channels/stable.json` manifest against the trusted public key set distributed with the native client, download the recorded immutable ZIP, validate the exact SHA256 and approved platform-specific GitHub release URL, then inspect the accepted Gateway's `/client/releases/windows/manifest.json` and `/client/releases/windows/package.zip`. A discovered GitHub version is not activated until the Gateway selects it.
+[Installation 2.2.8](docs/INSTALLATION.md) | [Fehlerbehebung 2.2.8](docs/FEHLERBEHEBUNG.md) | [Sicherheit und Kompatibilität 2.2.8](docs/SICHERHEIT-UND-KOMPATIBILITAET.md)
 
-Development issue: [#536](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/536).
+Die x64-Dateiliste [docs/SHA256SUMS-2.2.8.txt](docs/SHA256SUMS-2.2.8.txt) und die eigenständige ARM64-Dateiliste [docs/SHA256SUMS-2.2.8-arm64.txt](docs/SHA256SUMS-2.2.8-arm64.txt) dürfen nicht verwechselt werden. Die Dateien `manifest.json`, `installer.json` und `artifact-source.json` in jedem Release beziehen sich nur auf dessen CPU-Architektur.
+
+**Sicherheit:** Das Gateway verifiziert die RSA-SHA256-Release-Signatur mit dem Key `mc-client-caf94007b07dc90b`, exakte SHA-256-Digests, Architektur, Source und Bridge-/Gateway-Kompatibilität. Weder GitHub »Latest« noch die Sichtbarkeit eines Prerelease installiert automatisch Updates. Der private Signierschlüssel liegt nicht in diesem Repository oder bei GitHub Actions. Die veröffentlichten ZIP-Dateien sind binary-only; die Windows Setup-EXE ist nicht Authenticode-codesigniert (Owner-Freigabevertrag), sondern wird durch den getrennten RSA-Release- und Hash-Vertrauenspfad abgesichert.
+
+Source, CLI und Tests: [Meilleur-Tech/Meilleur-Commander](https://github.com/Meilleur-Tech/Meilleur-Commander), [Issue #1704](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/1704). Keine privaten Keys, Enrollment-Tokens, Kundendaten oder ungeschützten CI-Artefakte im Release-Repository.
