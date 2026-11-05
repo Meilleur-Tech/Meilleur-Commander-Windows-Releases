@@ -1,24 +1,24 @@
 # Meilleur Commander Windows Client | Downloads und Versionsnachweise
 
-Meilleur Commander Windows hat getrennte native Pakete für **x86_64 (x64)** und **ARM64**. Beide besitzen eine native Windows-Oberfläche, den installierten Core und den lokalen Supervisor; es handelt sich um Binärpakete, nicht um Quellcode-Archive. Ausgegebene Update-Kanäle und eine neue GitHub-Version ersetzen niemals eine explizite Gateway-Freigabe.
+Meilleur Commander für Windows besitzt getrennte native **x64**- und **ARM64**-Installationspakete mit Oberfläche, Core, Supervisor und Launcher. GitHub-Assets und QA-Kanal-Freigaben sind separat; kein Prerelease darf als Stable oder Latest ausgegeben werden.
 
 ## Aktueller Freigabestatus
 
-- **Stabile Kundenfassung x64: 2.2.3**, siehe [stabiler Release](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/tag/windows-client-v2.2.3) und [channels/stable.json](channels/stable.json). Der stabile Kanal bleibt während der QA von 2.2.8 unverändert.
-- **Testkandidaten 2.2.8 x64 und ARM64:** signierte native Binaries aus Source `39549d4a188eafd8748dc0f167affc0495c20131`, jedoch **nicht Stable/Latest/Produktivfreigabe**. Zurzeit sind die Versionen im QA-Abnahmeprozess; ein bloßer Release-Tag oder Draft ist keine zugesagte Verfügbarkeit.
-- **Vorherige QA: 2.2.7** jeweils als getrennte signierte Prereleases. Ihre signierten Artefakte dürfen nicht umgepackt oder ersetzt werden.
+- **Stable / GitHub Latest für x64: 2.2.3**, siehe [stable.json](channels/stable.json). Kein produktiver Kanal wurde durch 2.2.9 verändert.
+- **Neue isolierte QA-Kandidaten: 2.2.9 für x64 und ARM64**, gemeinsam gebundener Quellcommit `300cfd6501323aa04fd15d247ecef56a70cf59f7`. Private native Build- und Owner-RSA-Freigabe müssen vor Asset-Upload erfolgreich nachgewiesen sein. Die Release-Links werden erst nach bestandener Prüfung als Prerelease veröffentlicht, niemals als Stable/Latest.
+- **Bisherige QA: 2.2.8 x64 und ARM64**, bereits als getrennte unveränderliche RSA-signierte Prereleases veröffentlicht. Der isolierte QA-Gateway hatte für beide Architekturen 2.2.8 aktiviert. Diese Releases werden nicht ersetzt oder umgepackt.
 
-| CPU | Version | Dateiname Setup | Dokumentation |
+| CPU | Kandidat | Native Setup-Datei | Release Notes |
 |---|---|---|---|
-| Windows x64 | 2.2.8 | `Meilleur-Commander-Client-Windows-x86_64-2.2.8-Setup.exe` | [Release Notes x64](docs/RELEASE-NOTES-2.2.8.md) |
-| Windows ARM64 | 2.2.8 | `Meilleur-Commander-Client-Windows-arm64-2.2.8-Setup.exe` | [Release Notes ARM64](docs/RELEASE-NOTES-2.2.8-arm64.md) |
+| Windows x64 (x86_64) | 2.2.9 | `Meilleur-Commander-Client-Windows-x86_64-2.2.9-Setup.exe` | [x64-Release-Notes](docs/RELEASE-NOTES-2.2.9.md) |
+| Windows ARM64 | 2.2.9 | `Meilleur-Commander-Client-Windows-arm64-2.2.9-Setup.exe` | [ARM64-Release-Notes](docs/RELEASE-NOTES-2.2.9-arm64.md) |
 
-## Anleitungen und Prüfsummen
+## Installations- und Sicherheitsdokumentation
 
-[Installation 2.2.8](docs/INSTALLATION.md) | [Fehlerbehebung 2.2.8](docs/FEHLERBEHEBUNG.md) | [Sicherheit und Kompatibilität 2.2.8](docs/SICHERHEIT-UND-KOMPATIBILITAET.md)
+[Installation](docs/INSTALLATION.md) · [Fehlerbehebung](docs/FEHLERBEHEBUNG.md) · [Sicherheit & Kompatibilität](docs/SICHERHEIT-UND-KOMPATIBILITAET.md)
 
-Die x64-Dateiliste [docs/SHA256SUMS-2.2.8.txt](docs/SHA256SUMS-2.2.8.txt) und die eigenständige ARM64-Dateiliste [docs/SHA256SUMS-2.2.8-arm64.txt](docs/SHA256SUMS-2.2.8-arm64.txt) dürfen nicht verwechselt werden. Die Dateien `manifest.json`, `installer.json` und `artifact-source.json` in jedem Release beziehen sich nur auf dessen CPU-Architektur.
+Die unterschiedliche x64-[SHA-256-Assetliste](docs/SHA256SUMS-2.2.9.txt) und ARM64-[SHA-256-Assetliste](docs/SHA256SUMS-2.2.9-arm64.txt) gehören ausschließlich zum jeweils zugehörigen, unabhängig signierten CPU-Release. Vor dem Release ist ein öffentliches Main-Readback dieser dokumentierten Digests erforderlich.
 
-**Sicherheit:** Das Gateway verifiziert die RSA-SHA256-Release-Signatur mit dem Key `mc-client-caf94007b07dc90b`, exakte SHA-256-Digests, Architektur, Source und Bridge-/Gateway-Kompatibilität. Weder GitHub »Latest« noch die Sichtbarkeit eines Prerelease installiert automatisch Updates. Der private Signierschlüssel liegt nicht in diesem Repository oder bei GitHub Actions. Die veröffentlichten ZIP-Dateien sind binary-only; die Windows Setup-EXE ist nicht Authenticode-codesigniert (Owner-Freigabevertrag), sondern wird durch den getrennten RSA-Release- und Hash-Vertrauenspfad abgesichert.
+Das Gateway überprüft RSA-SHA256 (`mc-client-caf94007b07dc90b`), SHA-256, Version, Architektur, Quell-/Build-Identität, Gateway- und Bridge-Kompatibilität. Die EXE wird in dieser Owner-Releasekette nicht über Windows Authenticode codesigniert (`unsigned-owner-authorized`), sondern nur über den separat geprüften signierten Release-Pfad verteilt. Der private RSA-Schlüssel liegt weder im öffentlichen Repository noch auf einem Windows-Buildrunner. SHA-256-Hashlisten und Release-Dateien sind architekturgetrennt.
 
-Source, CLI und Tests: [Meilleur-Tech/Meilleur-Commander](https://github.com/Meilleur-Tech/Meilleur-Commander), [Issue #1704](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/1704). Keine privaten Keys, Enrollment-Tokens, Kundendaten oder ungeschützten CI-Artefakte im Release-Repository.
+Source und ausführliche QA-Nachweise: [Meilleur Commander](https://github.com/Meilleur-Tech/Meilleur-Commander) · [Windows-Abnahme #1704](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/1704). Authentifizierungs-/Enrollment-Daten sowie private Signaturmaterialien gehören niemals in die Release-Assets.
