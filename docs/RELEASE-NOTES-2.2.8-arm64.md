@@ -13,7 +13,7 @@ Der sichere, Windows-exklusive Update-Bootstrap wurde in [PR #1735](https://gith
 | ARM64 (arm64) | `Meilleur-Commander-Client-Windows-arm64-2.2.8-Setup.exe` | Native interaktive Setup-Installation bzw. Initial-Upgrade |
 | ARM64 (arm64) | `Meilleur-Commander-Client-Windows-arm64-2.2.8.zip` | RSA-signiertes, binary-only Updatepaket für den verifizierenden Client/Gateway-Pfad |
 
-Quelle/Release-Tag: [`windows-client-arm64-v2.2.8`](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/tag/windows-client-arm64-v2.2.8). Diese Dateien sind erst verfügbar, sobald der Owner den Draft nach bestandenen Pflichtprüfungen als Prerelease veröffentlicht. Anleitung: [Installation](../docs/INSTALLATION.md).
+Quelle/Release-Tag: [`windows-client-arm64-v2.2.8`](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/tag/windows-client-arm64-v2.2.8). Diese Dateien sind erst verfügbar, sobald der Owner den Draft nach bestandenen Pflichtprüfungen als Prerelease veröffentlicht. Anleitung: [Installation](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/blob/main/docs/INSTALLATION.md).
 
 ## Update, Upgrade und Migration
 
@@ -25,7 +25,7 @@ Die vorhandene, vollständige Programm-Vorgängergeneration ist über den versio
 
 ## Kompatibilität, Sicherheit, Fehlerbehebung
 
-Windows arm64; Gateway-Version **2.0.5 bis 2.9.9**, Bridge-Protokoll **1** gemäß signiertem Manifest. Release-Signatur **RSA-SHA256**, Key-ID `mc-client-caf94007b07dc90b`, native artifact SHA-256 und Source-/Buildidentität gebunden. Authenticode EXE: `unsigned-owner-authorized`, also keine Behauptung eines Windows-Code-Signing-Zertifikats. Falscher CPU-Kanal, fehlende Daten, unzulässige Herkunft, defektes Enrollment, Downgrade oder Transaction-Fence blockieren statt Sicherheitsprüfungen zu umgehen. Siehe [Sicherheit und Kompatibilität](../docs/SICHERHEIT-UND-KOMPATIBILITAET.md) und [Fehlerbehebung](../docs/FEHLERBEHEBUNG.md).
+Windows arm64; Gateway-Version **2.0.5 bis 2.9.9**, Bridge-Protokoll **1** gemäß signiertem Manifest. Release-Signatur **RSA-SHA256**, Key-ID `mc-client-caf94007b07dc90b`, native artifact SHA-256 und Source-/Buildidentität gebunden. Authenticode EXE: `unsigned-owner-authorized`, also keine Behauptung eines Windows-Code-Signing-Zertifikats. Falscher CPU-Kanal, fehlende Daten, unzulässige Herkunft, defektes Enrollment, Downgrade oder Transaction-Fence blockieren statt Sicherheitsprüfungen zu umgehen. Siehe [Sicherheit und Kompatibilität](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/blob/main/docs/SICHERHEIT-UND-KOMPATIBILITAET.md) und [Fehlerbehebung](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/blob/main/docs/FEHLERBEHEBUNG.md).
 
 ## Source, QA und SHA-256 Nachweis
 
@@ -33,6 +33,10 @@ Windows arm64; Gateway-Version **2.0.5 bis 2.9.9**, Bridge-Protokoll **1** gemä
 - Native Build/Private-R2-Handoff: [GitHub Actions Run #41992103297](https://github.com/Meilleur-Tech/Meilleur-Commander/actions/runs/41992103297), erfolgreich.
 - Owner-only Offline-RSA-Signierung mit unabhängig verifiziertem Transfer: bestanden, kein Asset veröffentlicht oder Gateway aktiviert.
 - Setup SHA-256: `1c1ed6c47a4c5d952887d72734c3c9c89a6f5f6a34fce7efbe56f4f20d87a2c0`.
-- Für genau diesen CPU-Kanal: [alle sechs Asset-Hashes](SHA256SUMS-2.2.8-arm64.txt) einschließlich ZIP, Setup, signiertem Manifest, signiertem Installer-Descriptor, Herkunft und Metadaten. Die siebte `SHA256SUMS`-Datei enthält keine eigene Prüfsumme.
+- Für genau diesen CPU-Kanal: [alle sechs Asset-Hashes](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/blob/main/docs/SHA256SUMS-2.2.8-arm64.txt) einschließlich ZIP, Setup, signiertem Manifest, signiertem Installer-Descriptor, Herkunft und Metadaten. Die siebte `SHA256SUMS`-Datei enthält keine eigene Prüfsumme.
 - Relevanter Fehler- und Abnahme-Tracker: [Meilleur Commander #1704](https://github.com/Meilleur-Tech/Meilleur-Commander/issues/1704); unabhängiger Fix-Review auf PR #1735 und erfolgreiche Main-CI für den Source SHA.
 - Status bei Dokumentation: Native Build, RSA, signierte Staging-Identität **PASS**; veröffentlichter Prerelease/Public-Readback, echter in-app OTA und GUI **OFFEN**. Keine Stable/Latest-/PROD-Freigabe vor gesonderter positiver Abnahme.
+
+## Öffentliche Dokumentation
+
+[README / Downloadübersicht](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/blob/main/README.md) · [Installation](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/blob/main/docs/INSTALLATION.md) · [Fehlerbehebung](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/blob/main/docs/FEHLERBEHEBUNG.md) · [Sicherheit und Kompatibilität](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/blob/main/docs/SICHERHEIT-UND-KOMPATIBILITAET.md) · [SHA-256-Assetliste](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/blob/main/docs/SHA256SUMS-2.2.8-arm64.txt)

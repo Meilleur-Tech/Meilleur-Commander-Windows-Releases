@@ -4,7 +4,7 @@ Meilleur Commander Windows hat getrennte native Pakete für **x86_64 (x64)** und
 
 ## Aktueller Freigabestatus
 
-- **Stabile Kundenfassung x64: 2.2.3**, siehe [stabiler Release](releases/tag/windows-client-v2.2.3) und [channels/stable.json](channels/stable.json). Der stabile Kanal bleibt während der QA von 2.2.8 unverändert.
+- **Stabile Kundenfassung x64: 2.2.3**, siehe [stabiler Release](https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/tag/windows-client-v2.2.3) und [channels/stable.json](channels/stable.json). Der stabile Kanal bleibt während der QA von 2.2.8 unverändert.
 - **Testkandidaten 2.2.8 x64 und ARM64:** signierte native Binaries aus Source `39549d4a188eafd8748dc0f167affc0495c20131`, jedoch **nicht Stable/Latest/Produktivfreigabe**. Zurzeit sind die Versionen im QA-Abnahmeprozess; ein bloßer Release-Tag oder Draft ist keine zugesagte Verfügbarkeit.
 - **Vorherige QA: 2.2.7** jeweils als getrennte signierte Prereleases. Ihre signierten Artefakte dürfen nicht umgepackt oder ersetzt werden.
 
