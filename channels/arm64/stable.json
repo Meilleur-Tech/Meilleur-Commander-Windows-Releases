@@ -1,0 +1,65 @@
+{
+  "channel": "stable",
+  "note": "Untrusted public discovery only; installed pinned RSA key authenticates the signed manifest and immutable package checksum. No Gateway build or deployment required.",
+  "platform": "windows",
+  "release": {
+    "arch": "arm64",
+    "artifact_source": {
+      "client_build": "sha256:1f618517d721125833528b51b7d9a5221be26f021e4a5fd5fb869fdeb8bab253",
+      "client_version": "2.2.10",
+      "schema": "meilleur-client-release-artifact-source/v1",
+      "sha256": "2857226329cc5caab78e41609f6b81584504d9ea33f2596e17a519f9708b61e7",
+      "source_commit": "166e2d64f9134ae113d7fa5014d96219b76c4b48",
+      "url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-arm64-v2.2.10/Meilleur-Commander-Client-Windows-arm64-2.2.10.zip",
+      "version": 1
+    },
+    "asset_size_bytes": 11104792,
+    "asset_url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-arm64-v2.2.10/Meilleur-Commander-Client-Windows-arm64-2.2.10.zip",
+    "client_build": "sha256:1f618517d721125833528b51b7d9a5221be26f021e4a5fd5fb869fdeb8bab253",
+    "compatibility": {
+      "bridge_protocol": {
+        "maximum": 1,
+        "minimum": 1
+      },
+      "gateway_version": {
+        "maximum": "2.9.9",
+        "minimum": "2.0.5"
+      }
+    },
+    "manifest": {
+      "arch": "arm64",
+      "artifact": "package.zip",
+      "client_build": "sha256:1f618517d721125833528b51b7d9a5221be26f021e4a5fd5fb869fdeb8bab253",
+      "client_version": "2.2.10",
+      "compatibility": {
+        "bridge_protocol": {
+          "maximum": 1,
+          "minimum": 1
+        },
+        "gateway_version": {
+          "maximum": "2.9.9",
+          "minimum": "2.0.5"
+        }
+      },
+      "os": "windows",
+      "schema": "meilleur-client-release/v2",
+      "sha256": "2857226329cc5caab78e41609f6b81584504d9ea33f2596e17a519f9708b61e7",
+      "signature": {
+        "algorithm": "rsa-sha256",
+        "key_id": "mc-client-caf94007b07dc90b",
+        "value": "GCuaTQtoes3IHZJmrA8kmMtEtBtq41v058zSj7U1QpobzS4P8podFpaEUOZhqOEXRX4kVGY0SjoIYJzKMpvi3QKrCUqSBgqeBwm1FsiB8YvnK9OJO8YIvIAlRqoZrljt60CXU3+HNlW8626NPyHJvsJyyLm0t53puY0hdxpAopre1L/0eAuzMFw2b7StFOcn/PwxU98Vv+LQgUrrMzVxZuItKuEupPkkLpzH7A9tUAdWrfE9KBLb3ozH+mGTf9AI5sKrbXf5/IHZGSoP4bmZQIDb+HYJXpFd32TLrVnjE71tcI0NAm/zAqxfg+8DUziRDr5MFGh8wLYEAcnEbr87yXK1A85pVh8Gdi6+x/Z4LgqkHiENR78lolKvaps2ydXCnjMObPS59bZTN+NCCg7iAtuYalI0Vica58wrFFBniMZejUNwpH7AH8U+44tc+iq5OzivdCvE9stX0okvpj749cd4DS1TxOMWXrDBc8xKdTrZluL8njg9R8GtfIXlMWK8"
+      },
+      "source_commit": "166e2d64f9134ae113d7fa5014d96219b76c4b48",
+      "version": 2
+    },
+    "manifest_key_id": "mc-client-caf94007b07dc90b",
+    "manifest_sha256": "275ac17b900ea88b4c64f509312552fbbd855aa84805564575f6538d17d5ff6b",
+    "sha256": "2857226329cc5caab78e41609f6b81584504d9ea33f2596e17a519f9708b61e7",
+    "source_commit": "166e2d64f9134ae113d7fa5014d96219b76c4b48",
+    "supersedes": "",
+    "tag": "windows-client-arm64-v2.2.10",
+    "version": "2.2.10"
+  },
+  "schema": "meilleur-client-public-release-index/v1",
+  "status": "published"
+}

@@ -1,21 +1,21 @@
 {
   "channel": "stable",
-  "note": "Untrusted discovery only; Gateway must independently verify RSA, immutable SHA256, compatibility and explicit activation",
+  "note": "Untrusted public discovery only; installed pinned RSA key authenticates the signed manifest and immutable package checksum. No Gateway build or deployment required.",
   "platform": "windows",
   "release": {
     "arch": "x86_64",
     "artifact_source": {
-      "client_build": "sha256:b2d2b1d581df3e3ee13b3d574186e5403ae72f530f115d01249432cbb906e085",
-      "client_version": "2.2.3",
+      "client_build": "sha256:b6b58c4c237028b75b7d55b86219f96907aa582764873113ac3694a29114fc5c",
+      "client_version": "2.2.10",
       "schema": "meilleur-client-release-artifact-source/v1",
-      "sha256": "dc8876ed76e04ab32d36f421e2c8eb412761a90a947a6651f63fbf011191f0c9",
-      "source_commit": "13ae884a8830c03e384047edf5a0130b3a275cb3",
-      "url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-v2.2.3/Meilleur-Commander-Client-Windows-x86_64-2.2.3.zip",
+      "sha256": "d35e7a8b64e6fc455aa2e40d4ae197a73238a552e0258332d45c14ded1908e2f",
+      "source_commit": "166e2d64f9134ae113d7fa5014d96219b76c4b48",
+      "url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-v2.2.10/Meilleur-Commander-Client-Windows-x86_64-2.2.10.zip",
       "version": 1
     },
-    "asset_size_bytes": 8694651,
-    "asset_url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-v2.2.3/Meilleur-Commander-Client-Windows-x86_64-2.2.3.zip",
-    "client_build": "sha256:b2d2b1d581df3e3ee13b3d574186e5403ae72f530f115d01249432cbb906e085",
+    "asset_size_bytes": 11782177,
+    "asset_url": "https://github.com/Meilleur-Tech/Meilleur-Commander-Windows-Releases/releases/download/windows-client-v2.2.10/Meilleur-Commander-Client-Windows-x86_64-2.2.10.zip",
+    "client_build": "sha256:b6b58c4c237028b75b7d55b86219f96907aa582764873113ac3694a29114fc5c",
     "compatibility": {
       "bridge_protocol": {
         "maximum": 1,
@@ -29,8 +29,8 @@
     "manifest": {
       "arch": "x86_64",
       "artifact": "package.zip",
-      "client_build": "sha256:b2d2b1d581df3e3ee13b3d574186e5403ae72f530f115d01249432cbb906e085",
-      "client_version": "2.2.3",
+      "client_build": "sha256:b6b58c4c237028b75b7d55b86219f96907aa582764873113ac3694a29114fc5c",
+      "client_version": "2.2.10",
       "compatibility": {
         "bridge_protocol": {
           "maximum": 1,
@@ -43,22 +43,22 @@
       },
       "os": "windows",
       "schema": "meilleur-client-release/v2",
-      "sha256": "dc8876ed76e04ab32d36f421e2c8eb412761a90a947a6651f63fbf011191f0c9",
+      "sha256": "d35e7a8b64e6fc455aa2e40d4ae197a73238a552e0258332d45c14ded1908e2f",
       "signature": {
         "algorithm": "rsa-sha256",
         "key_id": "mc-client-caf94007b07dc90b",
-        "value": "p9J+tBFXMs5KmOq6P1wl1QIpXYx/AnrXOGhjKIVWS92uOizEoDg5HHl3GT+bfTaWHLw18Uzyo+54IFi+QlVF8hARwFJZJGZfVU8xdnAhIsKY3OvqbuoMKifVBPRRFVHp5lbO01uR1wVIbtgh39qWIyQINAUu138eJrlnXXeYBIFz2dm1h6rAhHGZ1Sf47WJhLD79hMmoS51ulxC+H74wpRcWpg02kHLvmSXzU99uXlZUorzWDtui8R3gh/HKXjdI0TAKZBVu9/nhqC735cVYwBA6Z89nFWr+2jHvLaRKN1Oltx82bg0T++yg8C9FN9fuudPYXbRKGhMhX9+i/JNwJ1ZCq9dMITLcW3WucN3kKwjy0HnnBgqw6hfyEzN/gIejyLmUOKI9c4vocMNGQDUzI4idTgYbN5fsvA6hmjiXeeDR515sRaoUgW8t7jH6dobZzO26aZpc1pZoPdtDEaPHBBi7Hvwd6Rzj1sWd7YWUOmXWFq4u6feOvm3srwzSW27C"
+        "value": "FBqg3x6LJecb3G2Yh/H126+86cRPAnlc+2D8aRIvI+vK4vpCv2qg+oud1hJKDxjXAtYCDHx1Z+IpcT5GzqQevxkEHHSOXiiL8oMhEXTYV67W1oJVN6/99CQnyDPt3LAytnCjAt/kvYaiGkb6lzS2acmAviER5SXpBSCf25py/7+tCpGivc8SHvQkTH+Uj39z/a/XsxfEuRnu7JZcO8RPPj/Ke9VsP7OC/zputnADd0zA5uEp/16XGCJ4tuELmtpNzOf9MjhVKZmfzNB9HQ/UikvOyGL47tUX+8LkXqg3/ZcwdhtXkRbCo1pEgXZmRD1Rug6OZUBY7fszp8My98HEQ1MEimZA2nIVaO4MbTAvV1wJjYQhjOQDMr7wESHyEp9YQhAKqjnh0YNzoQoZT+wJivRaFB9XLoehVrvn564Ab68ko9fhdb5EjL9gsnFLYrziZquhq23D2xqflzZBGldTqNnzbxsyRB1/8P4AF3bZ609uzjFUW8BfrHNz3eO2RW/Y"
       },
-      "source_commit": "13ae884a8830c03e384047edf5a0130b3a275cb3",
+      "source_commit": "166e2d64f9134ae113d7fa5014d96219b76c4b48",
       "version": 2
     },
     "manifest_key_id": "mc-client-caf94007b07dc90b",
-    "manifest_sha256": "a57ddece3b446eba92921149b66a60012c267d1e32746d4cc3c9b9214e033931",
-    "sha256": "dc8876ed76e04ab32d36f421e2c8eb412761a90a947a6651f63fbf011191f0c9",
-    "source_commit": "13ae884a8830c03e384047edf5a0130b3a275cb3",
-    "supersedes": "2.2.1",
-    "tag": "windows-client-v2.2.3",
-    "version": "2.2.3"
+    "manifest_sha256": "52e4b06494b28b6a8371897989c74995a80eae3eeb30a8492d657b60979a221b",
+    "sha256": "d35e7a8b64e6fc455aa2e40d4ae197a73238a552e0258332d45c14ded1908e2f",
+    "source_commit": "166e2d64f9134ae113d7fa5014d96219b76c4b48",
+    "supersedes": "2.2.3",
+    "tag": "windows-client-v2.2.10",
+    "version": "2.2.10"
   },
   "schema": "meilleur-client-public-release-index/v1",
   "status": "published"
