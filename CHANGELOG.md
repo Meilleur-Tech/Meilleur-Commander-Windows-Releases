@@ -1,4 +1,11 @@
-# Neuerungen bei Meilleur Commander für Windows
+# Neuerungen bei Fabric Commander für Windows
+
+## 2.2.10 (x64 und ARM64, stabile Version)
+
+- Einheitliche aktuelle Windows-Version für x64 und ARM64
+- Signierte direkte Updateprüfung über öffentliche Stable-Kanäle unabhängig von einem laufenden Gateway
+- Stabilere lokale Updatevorbereitung bei vorübergehend unterbrochener Verbindung
+- Verbesserte Wiederherstellung eines vorhandenen Windows-Lifecycle-Tasks bei Updates
 
 ## 2.2.8 (x64 und ARM64, Testversion)
 
